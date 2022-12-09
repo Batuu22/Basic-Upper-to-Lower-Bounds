@@ -1,0 +1,65 @@
+package Packet1;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	
+	// Basic From Upper to Lower Bounds Algorithm
+	
+	public static void main(String[] args) {
+		
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("1st Number:");
+		
+		int a = scan.nextInt();			// equal to 1st Number
+		
+		System.out.println("2nd Number:");
+		
+		int b = scan.nextInt();			// equal to 2nd Number
+		
+		System.out.println("3rd Number:");	
+		
+		int c = scan.nextInt();			// equal to 3rd Number
+		
+		
+		if (a>b && a>c) {
+			
+			if(b>c) {
+				
+				System.out.println("a>b>c");
+			}
+			else {
+				
+				System.out.println("a>c>b");
+			}
+			
+		}
+		else if (b>a && b>c) {
+			
+			if(a>c) {
+				
+				System.out.println("b>a>c");
+			}
+			else {
+				
+				System.out.println("b>c>a");
+			}
+		}
+		else {
+			
+			if(a>b) {
+				System.out.println("c>a>b");
+			}
+			else {
+				
+				System.out.println("c>b>a");
+			}
+			
+		}
+		
+	}
+
+}
